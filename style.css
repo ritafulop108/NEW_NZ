@@ -2,6 +2,11 @@ body {
     margin: auto;
     background-image: linear-gradient(to right, rgb(192, 191, 191), rgb(212, 211, 211), white, rgb(192, 191, 191), rgb(212, 211, 211));
     font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
