@@ -13,6 +13,7 @@ body {
     justify-content: space-around;
     box-shadow: 1px 4px 3px 3px rgba(128, 128, 128, 0.5);
     background-color: white;
+    padding-top: 100px;
 }
 
 .big {
