@@ -31,7 +31,7 @@ aside {
     align-items: center;
 }
 
-#imgtext {
+.gray-container {
     position: absolute;
     width: 880px;
     height: 100px;
@@ -40,7 +40,16 @@ aside {
     font-size: 14px;
     background-color: rgba(0, 0, 0, 0.658);
     text-align: left;
-    padding: 10px;
+}
+
+#photoTitle {
+    font-size: 20px;
+    padding: 10px 10px 0px 20px;
+}
+
+#photoDescription {
+    color: grey;
+    padding: 0px 10px 10px 20px;
 }
 
 #backArrow {
