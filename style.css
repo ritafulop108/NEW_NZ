@@ -48,6 +48,8 @@ aside {
     flex-wrap: wrap;
     height: 80px;
     align-content: center;
+    padding-top: 10px;
+    /* background-color: yellow; */
 }
 
 .big {
@@ -61,8 +63,10 @@ aside {
     height: 50px;
     object-fit: cover;
     border: white solid 4px;
+    margin: 5px;
 }
 
 .textOver {
     visibility: hidden;
+    position: absolute;
 }
