@@ -1,58 +1,63 @@
-body {
-    margin: auto;
-    background-image: linear-gradient(to right, rgb(192, 191, 191), rgb(212, 211, 211), white, rgb(192, 191, 191), rgb(212, 211, 211));
-    font-family: 'Raleway', sans-serif;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
-    padding: 100px 0;
-}
-
-.headPhotoHolder {
-    width: 1000px;
-    height: 400px;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    box-shadow: 1px 4px 3px 3px rgba(128, 128, 128, 0.5);
-    background-color: white;
-    flex-direction: row;
-}
-
-#backArrow {
-    height: 20px;
-    width: fit-content;
-}
-
-#nextArrow {
-    transform: rotate(180deg);
-    height: 20px;
-    width: fit-content;
-}
-
-.thumbnail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 80px;
-    align-content: center;
-}
-
-.big {
-    width: 900px;
-    height: 400px;
-    object-fit: cover;
-}
-
-.small1 {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-}
+            body {
+                margin: auto;
+                background-image: linear-gradient(to right, rgb(192, 191, 191), rgb(212, 211, 211), white, rgb(192, 191, 191), rgb(212, 211, 211));
+                font-family: 'Raleway', sans-serif;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .container {
+                padding: 100px 0;
+            }
+            
+            .headPhotoHolder {
+                width: 1000px;
+                height: 400px;
+                position: relative;
+                display: flex;
+                justify-content: space-around;
+                box-shadow: 1px 4px 3px 3px rgba(128, 128, 128, 0.5);
+                background-color: white;
+                flex-direction: row;
+            }
+            
+            aside {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            #backArrow {
+                width: fit-content;
+            }
+            
+            #nextArrow {
+                transform: rotate(180deg);
+                width: fit-content;
+            }
+            
+            .thumbnail {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                height: 80px;
+                align-content: center;
+            }
+            
+            .big {
+                width: 900px;
+                height: 400px;
+                object-fit: cover;
+            }
+            
+            .small1 {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+            }
