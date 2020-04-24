@@ -13,10 +13,31 @@ body {
     height: 400px;
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: space-around;
     box-shadow: 1px 4px 3px 3px rgba(128, 128, 128, 0.5);
     background-color: white;
+    flex-direction: row;
+}
+
+#backArrow {
+    height: 20px;
+    width: fit-content;
+}
+
+#nextArrow {
+    transform: rotate(180deg);
+    height: 20px;
+    width: fit-content;
+}
+
+.thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 80px;
+    align-content: center;
 }
 
 .big {
@@ -26,7 +47,7 @@ body {
 }
 
 .small1 {
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
 }
