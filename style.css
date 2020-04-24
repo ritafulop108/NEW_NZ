@@ -31,6 +31,18 @@ aside {
     align-items: center;
 }
 
+#imgtext {
+    position: absolute;
+    width: 880px;
+    height: 100px;
+    bottom: 0px;
+    color: white;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.658);
+    text-align: left;
+    padding: 10px;
+}
+
 #backArrow {
     width: fit-content;
 }
