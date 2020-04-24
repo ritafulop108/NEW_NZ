@@ -3,3 +3,31 @@ body {
     background-image: linear-gradient(to right, rgb(192, 191, 191), rgb(212, 211, 211), white, rgb(192, 191, 191), rgb(212, 211, 211));
     font-family: 'Raleway', sans-serif;
 }
+
+.container {
+    width: 1000px;
+    height: 600px;
+}
+
+.headPhotoHolder {
+    width: 1000px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 1px 4px 3px 3px rgba(128, 128, 128, 0.5);
+    background-color: white;
+}
+
+.big {
+    width: 900px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.small1 {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
