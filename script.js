@@ -61,7 +61,7 @@ $('#title').text(imagesData[currentPhoto].title).title;
 $('#description').text(imagesData[currentPhoto].description);
 
 function loadTitle(photoNumber) {
-    $("#photo").attr("src", imagesData[currentPhoto]);
+    $("#photo").attr("src", imagesData[photoNumber].photo);
 }
 
 function loadTitle(photoNumber) {
