@@ -76,7 +76,7 @@ loadPhoto(currentPhoto);
 
 $('#nextArrow').click(() => {
     if (currentPhoto < 7) { currentPhoto++; }
-    if (currentPhoto = 7) { currentPhoto = 0; }
+    // if (currentPhoto = 7) { currentPhoto = 0; }
     loadPhoto(currentPhoto);
     loadTitle(currentPhoto);
     loadDescription(currentPhoto);
@@ -84,8 +84,30 @@ $('#nextArrow').click(() => {
 
 $('#backArrow').click(() => {
     if (currentPhoto > 0) { currentPhoto--; }
-    if (currentPhoto = 0) { currentPhoto = 7; }
+    // if (currentPhoto = 0) { currentPhoto = 7; }
     loadPhoto(currentPhoto);
     loadTitle(currentPhoto);
     loadDescription(currentPhoto);
 })
+
+//bottom part - hard core
+
+
+imagesData.forEach((item, index) => {
+            $('#photoScroll').append( <
+                div class = "imageHolder"
+                imagesData - index = "${index}" > $ { item }(data - index = "${index}") < /div>);
+
+            });
+
+
+
+        // $('#photoScroll').append(`<div class="photoHolder" data-index="${index}">${item} (data-index="${index}")</div>`);
+        // $('.box').click((event) => {
+        //     var indexClicked = $(event.target).attr('data-index');
+        //     // indexClicked is now a string! if you need it as a number you have to change it
+        //     // because for example "1" + 1 is going to be "11" and not 2
+        //     var numberIndex = parseInt(indexClicked);
+        //     // now numberIndex is a number
+        //     $('#clicked').text(data[indexClicked]);
+        // });
