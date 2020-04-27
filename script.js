@@ -77,9 +77,13 @@ loadPhoto(currentPhoto);
 $('#nextArrow').click(() => {
     currentPhoto++;
     loadPhoto(currentPhoto);
+    loadTitle(currentPhoto);
+    loadDescription(currentPhoto);
 })
 
 $('#backArrow').click(() => {
     currentPhoto++;
     loadPhoto(currentPhoto);
+    loadTitle(currentPhoto);
+    loadDescription(currentPhoto);
 })
