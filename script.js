@@ -59,3 +59,15 @@ let imagesData = [data1, data2, data3, data4, data5, data6, data7, data8];
 $('#photo').attr('src', imagesData[currentPhoto].photo);
 $('#title').text(imagesData[currentPhoto].title).title;
 $('#description').text(imagesData[currentPhoto].description);
+
+function loadTitle(photoNumber) {
+    $("#photo").attr("src", imagesData[currentPhoto]);
+}
+
+function loadTitle(photoNumber) {
+    $('#title').text(imagesData[photoNumber].title);
+}
+
+function loadDescription(photoNumber) {
+    $('#description').text(imagesData[photoNumber].description);
+}
