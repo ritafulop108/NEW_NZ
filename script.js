@@ -57,3 +57,5 @@ var data8 = {
 let currentPhoto = 0;
 let imagesData = [data1, data2, data3, data4, data5, data6, data7, data8];
 $('#photo').attr('src', imagesData[currentPhoto].photo);
+$('#title').text(imagesData[currentTitle].title);
+$('#description').text(imagesData[currentDescription].description);
