@@ -60,7 +60,7 @@ $('#photo').attr('src', imagesData[currentPhoto].photo);
 $('#title').text(imagesData[currentPhoto].title).title;
 $('#description').text(imagesData[currentPhoto].description);
 
-function loadTitle(photoNumber) {
+function loadPhoto(photoNumber) {
     $("#photo").attr("src", imagesData[photoNumber].photo);
 }
 
@@ -82,7 +82,7 @@ $('#nextArrow').click(() => {
 })
 
 $('#backArrow').click(() => {
-    currentPhoto++;
+    currentPhoto--;
     loadPhoto(currentPhoto);
     loadTitle(currentPhoto);
     loadDescription(currentPhoto);
