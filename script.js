@@ -71,3 +71,15 @@ function loadTitle(photoNumber) {
 function loadDescription(photoNumber) {
     $('#description').text(imagesData[photoNumber].description);
 }
+
+loadPhoto(currentPhoto);
+
+$('#nextArrow').click(() => {
+    currentPhoto++;
+    loadPhoto(currentPhoto);
+})
+
+$('#backArrow').click(() => {
+    currentPhoto++;
+    loadPhoto(currentPhoto);
+})
