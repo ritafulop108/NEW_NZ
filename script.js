@@ -1,7 +1,7 @@
 var data1 = {
     photo: "images/nz_01.jpeg",
     title: "Rocks",
-    description: "Castle Hill picknic and meditation",
+    description: "Castle Hill picknic.",
 };
 
 
@@ -57,5 +57,5 @@ var data8 = {
 let currentPhoto = 0;
 let imagesData = [data1, data2, data3, data4, data5, data6, data7, data8];
 $('#photo').attr('src', imagesData[currentPhoto].photo);
-$('#title').text(imagesData[currentTitle].title).title;
-$('#description').text(imagesData[currentDescription].description);
+$('#title').text(imagesData[currentPhoto].title).title;
+$('#description').text(imagesData[currentPhoto].description);
