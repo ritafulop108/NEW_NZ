@@ -75,14 +75,20 @@ function loadDescription(photoNumber) {
 loadPhoto(currentPhoto);
 
 $('#nextArrow').click(() => {
-    currentPhoto++;
+    if (currentPhoto < 0) {
+        currentPhoto++;
+    }
+    if (currentPhoto = 0) { currentPhoto = 7; }
     loadPhoto(currentPhoto);
     loadTitle(currentPhoto);
     loadDescription(currentPhoto);
 })
 
 $('#backArrow').click(() => {
-    currentPhoto--;
+    if (currentPhoto > 0) {
+        currentPhoto--;
+    }
+    if (currentPhoto = 7) { currentPhoto = 0; }
     loadPhoto(currentPhoto);
     loadTitle(currentPhoto);
     loadDescription(currentPhoto);
