@@ -1,6 +1,6 @@
 body {
     margin: auto;
-    background-image: linear-gradient(to right, rgb(192, 191, 191), rgb(212, 211, 211), white, rgb(192, 191, 191), rgb(212, 211, 211));
+    background-image: radial-gradient(circle, white, grey);
     font-family: 'Raleway', sans-serif;
     overflow: hidden;
     display: flex;
@@ -29,7 +29,26 @@ aside {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 5%;
+    cursor: pointer;
 }
+
+.backArrow:hover,
+.nextArrow:hover {
+    opacity: 0.5;
+}
+
+
+/* .photoHolder {
+    align-items: center;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 90%;
+    position: relative;
+} */
 
 .gray-container {
     position: absolute;
@@ -70,7 +89,7 @@ aside {
     height: 80px;
     align-content: center;
     padding-top: 10px;
-    /* background-color: yellow; */
+    position: relative;
 }
 
 .big {
@@ -85,14 +104,65 @@ aside {
     object-fit: cover;
     border: white solid 4px;
     margin: 5px;
-    box-shadow: 0px 3px 0px rgba(128, 128, 128, 0.5);
+    box-shadow: 0px 15px 5px -10px grey;
+}
+
+.imageHolder {
+    display: inline-block;
+    margin: 0px 5px;
+    width: 70px;
+    height: 70px;
+    /* display: flex; */
+}
+
+.imageHolder:hover .small1 {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
 }
 
 .textOver {
     visibility: hidden;
     position: absolute;
+    font-size: 0.9rem;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 20px;
+    bottom: 90%;
+    left: 70%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.imageHolder:hover .textOver {
+    visibility: visible;
+    opacity: 1;
+}
+
+.textOver:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 0.5rem solid transparent;
+    border-top-color: #000000;
+    border-bottom: 0;
+    margin-left: -0.5rem;
+    margin-bottom: -0.3rem;
 }
 
 .smallDescription {
     visibility: hidden;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
 }
+
+
+/* tooltip look up */
