@@ -96,8 +96,8 @@ $('#backArrow').click(() => {
 imagesData.forEach((item, index) => {
     $('#photoScroll').append(`
     <div class="imageHolder "data-index="${index}">
-    <img class="small1 " id="imgSmall" src =${item.photo} data-index="${index}">
-    <span class="textOver ">${item.title}</span>
+    <img class="small1" id="imgSmall" src =${item.photo} data-index="${index}">
+    <span class="textOver">${item.title}</span>
     <p class="smallDescription">${item.description}</p>
     </div>`);
     $('.imageHolder').click((event) => {
