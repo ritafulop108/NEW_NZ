@@ -94,20 +94,20 @@ $('#backArrow').click(() => {
 
 
 imagesData.forEach((item, index) => {
-            $('#photoScroll').append( <
-                div class = "imageHolder"
-                imagesData - index = "${index}" > $ { item }(data - index = "${index}") < /div>);
+    $('#photoScroll').append(`<div class="photoHolder" data-index="${index}">
+    <img class="small1" id="imgSmall" src =${item.photo} data-index="${index}">
+    <span class="textOver ">${item.title}</span>
+    <p class="smallDescription">${item.description}</p>
+    </div>`);
+});
 
-            });
 
-
-
-        // $('#photoScroll').append(`<div class="photoHolder" data-index="${index}">${item} (data-index="${index}")</div>`);
-        // $('.box').click((event) => {
-        //     var indexClicked = $(event.target).attr('data-index');
-        //     // indexClicked is now a string! if you need it as a number you have to change it
-        //     // because for example "1" + 1 is going to be "11" and not 2
-        //     var numberIndex = parseInt(indexClicked);
-        //     // now numberIndex is a number
-        //     $('#clicked').text(data[indexClicked]);
-        // });
+// $('#photoScroll').append(`<div class="photoHolder" data-index="${index}">${item} (data-index="${index}")</div>`);
+// $('.box').click((event) => {
+//     var indexClicked = $(event.target).attr('data-index');
+//     // indexClicked is now a string! if you need it as a number you have to change it
+//     // because for example "1" + 1 is going to be "11" and not 2
+//     var numberIndex = parseInt(indexClicked);
+//     // now numberIndex is a number
+//     $('#clicked').text(data[indexClicked]);
+// });
