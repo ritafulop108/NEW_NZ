@@ -112,7 +112,8 @@ aside {
     margin: 0px 5px;
     width: 70px;
     height: 70px;
-    /* display: flex; */
+    display: flex;
+    position: relative;
 }
 
 .imageHolder:hover .small1 {
@@ -131,10 +132,10 @@ aside {
     text-align: center;
     border-radius: 6px;
     padding: 10px 20px;
-    bottom: 90%;
-    left: 70%;
-    opacity: 0;
-    transition: opacity 0.3s;
+    bottom: 110%;
+    left: -55%;
+    /* opacity: 0; */
+    /* transition: opacity 0.3s; */
 }
 
 .imageHolder:hover .textOver {
