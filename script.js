@@ -111,10 +111,3 @@ imagesData.forEach((item, index) => {
         currentPhoto = indexClicked;
     });
 });
-
-function popUp(event) {
-    if (event.target.classList.contains("small1")) {
-        console.log(event.target);
-    }
-};
-document.getElementById("photoScroll").addEventListener('click', popUp)
