@@ -108,12 +108,12 @@ aside {
 }
 
 .imageHolder {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0px 5px;
     width: 70px;
     height: 70px;
-    /* display: flex; */
-    position: relative;
 }
 
 .imageHolder:hover .small1 {
@@ -132,10 +132,7 @@ aside {
     text-align: center;
     border-radius: 6px;
     padding: 10px 20px;
-    bottom: 110%;
-    justify-content: center;
-    align-items: center;
-    /* left: -55%; */
+    bottom: 90%;
     opacity: 0;
     transition: opacity 0.3s;
 }
